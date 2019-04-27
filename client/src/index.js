@@ -8,6 +8,18 @@ import thunk from 'redux-thunk'
 // import rootReducer from './reducers/index.js'
 import * as serviceWorker from './serviceWorker';
 
+const store = createStore(
+  // rootReducer,
+  compose(
+    applyMiddleware(thunk),
+    // for local testing only
+    // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+
+    // necessary for heroku deployment or some computers encounter a loading error with the above
+    window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() : f => f
+  )
+)
+
 ReactDOM.render(
   <Provider store={store}>
     <App />
