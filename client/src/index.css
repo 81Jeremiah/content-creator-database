@@ -1,14 +1,79 @@
-body {
+body, html, #root {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+  width: auto;
+  height: auto;
+  user-select: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+#root, #creator-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#creator-grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1000px;
+  height: 1000px;
+}
+
+.creator-card {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.creator-card:hover {
+  transform: rotateY(180deg) scale(1.05)
+}
+
+
+.card-front, .card-back {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  backface-visibility: hidden;
+  background-size: cover;
+}
+
+.card-front {
+  filter: grayscale(100%);
+  transition-duration: 1s;
+  box-shadow: 5px 5px 10px;
+  box-shadow: 5px 5px 10px rgb(55, 55, 55, 0.85);
+
+}
+
+.card-front:hover {
+  filter: grayscale(0%);
+}
+
+.card-back {
+  background-image: url("./assets/patterns/cork-wallet.png");
+  transform: rotateY(180deg);
+  box-shadow: 5px 5px 10px rgb(55, 55, 55, 0.85);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+span {
+  border: none;
+  width: 80%;
+  height: 0px;
+  border: 1px solid black;
+  color: #000000;
+}
+
+.zero {
+  background: url("./assets/stars/stars.png") 0 0;
+  width: 148px;
+  height: 33px;
 }
