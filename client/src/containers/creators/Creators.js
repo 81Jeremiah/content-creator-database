@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CreatorCard from './components/creators/CreatorCard.js'
+import CreatorCard from '../../components/creators/CreatorCard.js'
 
 
 export default class Creators extends Component {
