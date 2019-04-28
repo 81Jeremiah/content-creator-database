@@ -19,12 +19,12 @@ ActiveRecord::Schema.define(version: 20190428174901) do
   end
 
   create_table "creator_categories", force: :cascade do |t|
-    t.integer  "quiz_id"
+    t.integer  "creator_id"
     t.integer  "category_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["category_id"], name: "index_creator_categories_on_category_id"
-    t.index ["quiz_id"], name: "index_creator_categories_on_quiz_id"
+    t.index ["creator_id"], name: "index_creator_categories_on_creator_id"
   end
 
   create_table "creators", force: :cascade do |t|
