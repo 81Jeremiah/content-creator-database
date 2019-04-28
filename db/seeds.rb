@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+creators = Creator.create([ {creator_name: 'Shane Dawson'},
+  {creator_name: 'Gabe'},
+  {creator_name: 'Christine Barger'},
+  {creator_name: 'Pewty Pie'},
+  {creator_name: 'Logan Paul'},
+  {creator_name: 'Jake Paul'} ])
