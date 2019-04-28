@@ -1,0 +1,2 @@
+class CreatorCategory < ApplicationRecord
+end
