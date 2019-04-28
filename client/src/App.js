@@ -1,12 +1,39 @@
-import React from 'react';
-import Creators from './containers/creators/Creators.js'
+import React, { Component } from 'react';
+import {Navbar} from 'react-bootstrap';
+import { connect } from 'react-redux';
+import { fetchCreators } from './actions/creatorActions';
+import Creators from './containers/creators/Creators';
 
-function App() {
-  return (
-    <div className="App">
-      <Creators />
-    </div>
-  );
+class App extends Component {
+
+  componentDidMount(){
+    this.props.fetchCreators()
+
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Navbar>
+
+        </Navbar>
+        <Creators />
+      </div>
+    );
+  }
 }
 
-export default App;
+const mapStateToProps = state => {
+
+  return {
+    creators: state.creators
+   }
+  debugger
+ }
+
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     fetchCreators: () => dispatch(fetchCreators())
+//     }
+//   }
+export default connect(mapStateToProps, { fetchCreators })(App);

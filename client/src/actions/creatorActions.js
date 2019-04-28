@@ -6,5 +6,6 @@ export const fetchCreators = () => {
     .then(creators => {
       return dispatch({ type: 'FETCH_CREATORS', creators: creators })
     })
+    
   }
 }
