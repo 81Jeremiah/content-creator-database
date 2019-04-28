@@ -7,7 +7,7 @@ export default class CardFront extends Component {
 
       <div className="card-front">
       <h1 className="creator-name"> {this.props.name} </h1>
-      <span />
+    
       <h3 className="trending"> {this.props.trending}</h3>
 
       </div>

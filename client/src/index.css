@@ -46,6 +46,11 @@ body, html, #root {
   transition-duration: 1s;
   box-shadow: 5px 5px 10px;
   box-shadow: 5px 5px 10px rgb(55, 55, 55, 0.85);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
 }
 
@@ -62,6 +67,9 @@ body, html, #root {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.trend-button {
 }
 
 span {
