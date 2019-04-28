@@ -22,7 +22,7 @@ export default class CreatorCard extends Component {
           <FrontCard name={this.props.name} trending={this.state.trending}/>
           <BackCard mostPopularVideo={this.props.mostPopularVideo} category={this.props.category}/>
         </div>
-            <button className="div-button" onClick={this.handleClick}>trend</button>
+            <button className="trend-button" onClick={this.handleClick}>trend</button>
 
       </div>
 
