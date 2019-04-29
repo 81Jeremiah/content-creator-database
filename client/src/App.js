@@ -17,18 +17,16 @@ class App extends Component {
         <Navbar>
 
         </Navbar>
-        <Creators />
+        <Creators creatorObjects={this.props.creators}/>
       </div>
     );
   }
 }
 
 const mapStateToProps = state => {
-
   return {
     creators: state.creators
    }
-  debugger
  }
 
 // const mapDispatchToProps = dispatch => {
