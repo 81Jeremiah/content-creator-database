@@ -4,14 +4,17 @@ import BackCard from './BackCard.js';
 
 export default class CreatorCard extends Component {
 
-  state = {
-    trending: 0
+  constructor(props) {
+         super(props)
+          this.state = {
+            trending: this.props.trending
+          }
   }
-
   handleClick = () =>{
     this.setState({
-      trending: this.state.trending + 1
+      trending: this.props.trending + 1
     })
+    this.updateTrending(props)
   }
 
   render() {
