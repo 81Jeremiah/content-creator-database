@@ -9,6 +9,7 @@ class CreatorForm extends Component {
 
     this.state = {
       name: "",
+      image: "",
       platform: "",
       bio: "",
       videos: [],
@@ -54,7 +55,7 @@ class CreatorForm extends Component {
 
     return(
       <div className="tc ph4">
-      <h1 className="f3 f2-m f1-l fw2 black-90 mv3">Wanna make a new recipe? Go for it!</h1>
+      <h1 className="f3 f2-m f1-l fw2 black-90 mv3">Please add a new creator below</h1>
 
         <form className="measure center" onSubmit={this.handleSubmit}>
           <fieldset className="ba b--transparent ph0 mh0">
@@ -69,6 +70,18 @@ class CreatorForm extends Component {
                 onChange={this.handleChange}
               />
             </div>
+
+            <div className="mt3">
+              <label className="db fw6 lh-copy f6">Image: </label>
+              <input
+                className="b pa2 input-reset ba bg-transparent w-100"
+                type="text"
+                name="name"
+                value={this.state.image}
+                onChange={this.handleChange}
+              />
+            </div>
+
 
             <div className="mt3">
               <label className="db fw6 lh-copy f6">Platform: </label>
