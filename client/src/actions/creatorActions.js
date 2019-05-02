@@ -11,5 +11,17 @@ export const fetchCreators = () => {
 }
 
 export const updateTrending = (creatorId) => {
-  
+
+}
+
+export const fetchCreator = (creatorId) => {
+  return (dispatch) => {
+    dispatch({type: 'LOADING_CREATOR'});
+    return fetch(`/api/creators/${creatorId}`)
+    .then(response => response.json())
+    .then(creator => {
+      return dispatch({ type: 'FETCH_CREATOR', creators: creator })
+    })
+
+  }
 }
