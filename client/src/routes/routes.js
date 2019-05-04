@@ -1,20 +1,20 @@
-import React from 'react'
-import React from 'react'
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
-import { Navbar, Nav, NavItem } from 'react-bootstrap'
+import React from 'react';
+import { BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import  CreatorForm  from '../components/creators/CreatorForm';
+import  TopCreators from '../components/creators/TopCreators';
 
 
+const Routes = props => {
 
-const Routes = () => (
-    <Router>
+    const something = (
         <div>
             <Navbar collapseOnSelect>
-                <Navbar.Header>
+
                     <Navbar.Brand>
-                        <Link to="/login">Login/Link>
+                        <Link to="/login">Login</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle/>
-                </Navbar.Header>
 
                 <Navbar.Collapse>
                     <Nav>
@@ -25,12 +25,19 @@ const Routes = () => (
                 </Navbar.Collapse>
             </Navbar>
             <div class='container'>
-                <Route exact path="/login" component={login}/>
-                <Route exact path="/home" component={Home}/>
-                <Route exact path="/new" component={new}/>
+            <Switch>
+               <Route exact path="/new" component={CreatorForm}/>
+               <Route exact path="/home" component={TopCreators}/>
+            </Switch>
             </div>
         </div>
-    </Router>
-)
+    )
+
+      return (
+      <Router>
+         { something }
+      </Router>
+  )
+}
 
 export default Routes
