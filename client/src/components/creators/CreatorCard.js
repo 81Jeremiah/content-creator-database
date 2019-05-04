@@ -12,9 +12,9 @@ export default class CreatorCard extends Component {
   }
   handleClick = () =>{
     this.setState({
-      trending: this.props.trending + 1
+      trending: this.state.trending += 1
     })
-    this.updateTrending(props)
+    // this.updateTrending(props)
   }
 
   render() {
