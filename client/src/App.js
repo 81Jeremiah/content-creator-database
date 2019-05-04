@@ -3,6 +3,8 @@ import {Navbar} from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { fetchCreators } from './actions/creatorActions';
 import Creators from './containers/creators/Creators';
+import Routes from './routes/routes';
+
 
 class App extends Component {
 
@@ -14,10 +16,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar>
+        <Routes />
 
-        </Navbar>
-        <Creators creatorObjects={this.props.creators}/>
+
+        // <Creators creatorObjects={this.props.creators}/>
       </div>
     );
   }
