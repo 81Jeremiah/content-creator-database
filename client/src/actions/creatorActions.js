@@ -20,4 +20,17 @@ export const fetchCreators = () => {
     }
   }
 
- 
+  export function createCreator(creator){
+    return (dispatch) => {
+      dispatch({ type: 'SENDING_CREATOR' });
+      return fetch(`/api/creators`, {
+        method: 'post',
+         headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify( creator )
+    })
+        .then(response => response.json())
+        .then(creator => dispatch({ type: 'CREATE_CREATOR', creator: creator }));
+    };
+  }
