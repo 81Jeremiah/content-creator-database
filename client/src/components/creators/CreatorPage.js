@@ -1,34 +1,45 @@
+// import React, { Component } from 'react';
+//
+//
+// export default class CreatorPage extends Component {
+//   render() {
+//     return(
+//       <div>
+//       tets
+//         <h1>Hello Friend{this.props.creator.creator_name} </h1>
+//
+//       </div>
+//
+//     )
+//   }
+// }
+// import React from 'react';
+// const CreatorPage = props => {
+//   return (
+//     <div>
+//      <p>{this.props.creator_name}</p>
+//     </div>
+//   )
+// }
+//
+// export default CreatorPage
+
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { Redirect } from 'react-router-dom'
 import CreatorDetails from './CreatorDetails';
-import { deleteCreator, fetchCreator } from '../../actions/creatorActions';
+import { fetchCreator } from '../../actions/creatorActions';
 
 class CreatorPage extends Component {
-  state = {
-    isDeleted: false
-  }
 
   componentDidMount = () => {
-    const recipeId = this.props.match.params.id
-    this.props.fetchRecipe(recipeId)
-  }
-
-  handleDeleteCreator = event => {
-    this.props.deleteRecipe(this.props.creator.id)
-    this.setState({
-      isDeleted: true
-    })
+    const creatorId = this.props.match.params.id
+    this.props.fetchCreator(creatorId)
   }
 
   render() {
-    if (this.state.isDeleted === true){
-      return <Redirect to="/" />
-    }
-
     return(
       <div>
-        <CreatorDetails creator={this.props.creator} handleDeleteRecipe={this.handleDeleteRecipe}/>
+        <CreatorDetails creator={this.props.creator} />
       </div>
     )
   }
@@ -36,7 +47,7 @@ class CreatorPage extends Component {
 
 
 const mapStateToProps = state => {
-  return { creator: state.creator}
+  return { creator: state.creators}
 }
 
-export default connect(mapStateToProps, { deleteCreator, fetchCreator })(CreatorPage);
+export default connect(mapStateToProps, {fetchCreator })(CreatorPage);
