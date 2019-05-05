@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Button,Form, FormGroup, ControlLabel, FormControl} from 'react-bootstrap'
 
-// import { connect } from 'react-redux'
+import { connect } from 'react-redux'
 // import { withRouter, Redirect } from 'react-router-dom'
 import { createCreator } from '../../actions/creatorActions'
 
@@ -12,7 +12,7 @@ class CreatorForm extends Component {
     super(props)
 
     this.state = {
-      name: "",
+      creator_name: "",
       image: "",
       platform: "",
       bio: "",
@@ -36,7 +36,7 @@ class CreatorForm extends Component {
 
      this.props.createCreator(creator)
      this.setState({
-       name: "",
+       creator_name: "",
        image: "",
        platform: "",
        bio: "",
@@ -51,10 +51,13 @@ class CreatorForm extends Component {
     <Form onSubmit={this.handleSubmit}>
       <Form.Group controlId="exampleForm.ControlInput1">
         <Form.Label>Creator Name:</Form.Label>
-        <Form.Control type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
+        <Form.Control type="text" name="creator_name" value={this.state.creator_name} onChange={this.handleChange}/>
 
       <Form.Label>Image:</Form.Label>
         <Form.Control type="file" name="image" value={this.state.image} onChange={this.handleChange}/>
+
+      <Form.Label>Platform:</Form.Label>
+        <Form.Control type="text" name="platform" value={this.state.platform} onChange={this.handleChange}/>
 
       </Form.Group>
 
@@ -80,6 +83,5 @@ class CreatorForm extends Component {
   }
 }
 
-export default CreatorForm
 
-// export default CreatorForm = withRouter(connect(null, { createCreator })(CreatorForm));
+export default connect(null, { createCreator })(CreatorForm);
