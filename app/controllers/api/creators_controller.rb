@@ -9,4 +9,14 @@ class Api::CreatorsController < ApplicationController
     @creator = Creator.find_by(id: params[:id])
   end
 
+  def create
+    @creator = Creator.create(creator_params)
+    render json: @creator
+  end
+
+  private
+
+  def creator_params
+    params.require(:creator).permit(:creator_name, :image, :platform, :bio, videos:[], categories: [], collabsWith: [])
+  end
 end
