@@ -48,7 +48,7 @@ class CreatorForm extends Component {
 
    render() {
      return(
-    <Form>
+    <Form onSubmit={this.handleSubmit}>
       <Form.Group controlId="exampleForm.ControlInput1">
         <Form.Label>Creator Name:</Form.Label>
         <Form.Control type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
@@ -73,7 +73,7 @@ class CreatorForm extends Component {
         <Form.Control as="textarea" rows="3" name="bio" value={this.state.bio} onChange={this.handleChange}/>
       </Form.Group>
 
-    <Button bsStyle="primary" type="submit" value="New Entry">New Entry</Button>
+    <Button variant="primary" type="submit" value="New Entry">New Entry</Button>
 
     </Form>
    )
