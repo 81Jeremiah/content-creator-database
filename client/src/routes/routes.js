@@ -18,7 +18,7 @@ const Routes = props => {
 
                 <Navbar.Collapse>
                     <Nav>
-                        <NavItem><Link to="/home">Home</Link></NavItem>
+                        <NavItem><Link to="/">Home</Link></NavItem>
                         <NavItem><Link to="/new">New</Link></NavItem>
 
                     </Nav>
@@ -27,8 +27,9 @@ const Routes = props => {
             <div className='container'>
             <Switch>
                <Route exact path="/new" component={CreatorForm}/>
-               <Route exact path="/home" component={TopCreators}/>
-             <Route exact path="/creators/:id" component={CreatorPage} />
+               <Route exact path="/" render={() => <TopCreators />} />
+               {/* <Route exact path="/" component={TopCreators}/> */}
+               <Route exact path="/creators/:id" component={CreatorPage} />
             </Switch>
             </div>
         </div>
