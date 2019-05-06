@@ -4,7 +4,7 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import  CreatorForm  from '../components/creators/CreatorForm';
 import  TopCreators from '../components/creators/TopCreators';
 import CreatorPage from '../components/creators/CreatorPage'
-
+import Login from '../containers/Login'
 const Routes = props => {
 
     const something = (
@@ -27,8 +27,8 @@ const Routes = props => {
             <div className='container'>
             <Switch>
                <Route exact path="/new" component={CreatorForm}/>
-               <Route exact path="/" render={() => <TopCreators />} />
-               {/* <Route exact path="/" component={TopCreators}/> */}
+               <Route exact path="/login" componet={Login}/>
+               <Route exact path="/" component={TopCreators}/>
                <Route exact path="/creators/:id" component={CreatorPage} />
             </Switch>
             </div>
