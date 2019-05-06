@@ -1,6 +1,8 @@
 export default (state =
   {loading: false,
-   creators: [] }
+   creators: [],
+   creator:[]
+   }
   , action) => {
 
   switch(action.type) {
@@ -15,7 +17,8 @@ export default (state =
       return {...state, loading: true}
 
     case 'FETCH_CREATOR':
-      return { ...state, loading: false, creators: action.creator }
+      debugger
+      return {...state, loading: false, creators:[...state.creators], creator: action.creator }
 
     case 'SENDING_CREATOR':
       return {...state, loading: true}
