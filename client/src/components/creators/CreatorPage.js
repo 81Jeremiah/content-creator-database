@@ -34,6 +34,8 @@ class CreatorPage extends Component {
   componentDidMount = () => {
     const creatorId = this.props.match.params.id
     this.props.fetchCreator(creatorId)
+
+    console.log(creatorId)
   }
 
   render() {
@@ -47,7 +49,9 @@ class CreatorPage extends Component {
 
 
 const mapStateToProps = state => {
-  return { creator: state.creators}
+  console.log(state)
+  debugger
+  return { creator: state.creators.creator}
 }
 
 export default connect(mapStateToProps, {fetchCreator })(CreatorPage);
