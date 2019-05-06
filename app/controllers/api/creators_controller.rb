@@ -7,6 +7,7 @@ class Api::CreatorsController < ApplicationController
 
   def show
     @creator = Creator.find_by(id: params[:id])
+    render json: @creator
   end
 
   def create
