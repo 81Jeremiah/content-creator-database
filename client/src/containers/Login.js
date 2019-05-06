@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Button,Form } from 'react-bootstrap';
+// import { connect } from 'react-redux';
+import { Button,Form,ControlLabel, FormControl, FormGroup } from 'react-bootstrap';
 
 class Login extends Component {
 
@@ -23,22 +23,22 @@ class Login extends Component {
 render() {
   return(
 
-  <Form>
-    <Form.Group controlId="formBasicEmail">
+  <Form onSubmit={this.handleSubmit}>
+    <FormGroup controlId="exampleForm.ControlInput1">
       <Form.Label>Email address</Form.Label>
-      <Form.Control type="email" placeholder="Enter email" />
+    <FormControl type="email" placeholder="Enter email" name="email" value={this.state.email} onChange={this.handleChange} />
       <Form.Text className="text-muted">
         We'll never share your email with anyone else.
       </Form.Text>
-    </Form.Group>
+    </FormGroup>
 
-    <Form.Group controlId="formBasicPassword">
+    <FormGroup controlId="formBasicPassword">
       <Form.Label>Password</Form.Label>
-      <Form.Control type="password" placeholder="Password" />
-    </Form.Group>
-    <Form.Group controlId="formBasicChecbox">
+    <Form.Control type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange}/>
+    </FormGroup>
+    <FormGroup controlId="formBasicChecbox">
       <Form.Check type="checkbox" label="Check me out" />
-    </Form.Group>
+    </FormGroup>
     <Button variant="primary" type="submit">
       Submit
     </Button>
