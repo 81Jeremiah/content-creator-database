@@ -37,7 +37,7 @@ render() {
     <Form.Control type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange}/>
     </FormGroup>
     <FormGroup controlId="formBasicChecbox">
-      <Form.Check type="checkbox" label="Check me out" />
+      <Form.Check type="checkbox" label="Remember Me" />
     </FormGroup>
     <Button variant="primary" type="submit">
       Submit
