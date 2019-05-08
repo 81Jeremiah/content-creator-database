@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import { Button,Form,ControlLabel, FormControl, FormGroup } from 'react-bootstrap';
-
+import {createUser} from '../actions/userActions'
 class SignUp extends Component {
 
   state = {
+    username: "",
     email: "",
     password: "",
   };
@@ -19,11 +20,19 @@ class SignUp extends Component {
 
   handleSubmit = event => {
     event.preventDefault()
+    const user = this.state
+    this.props.createUser(user)
+
   }
 render() {
   return(
 
   <Form onSubmit={this.handleSubmit}>
+    <FormGroup controlId="exampleForm.ControlInput1">
+      <Form.Label>Email address</Form.Label>
+    <FormControl type="text" placeholder="Enter Username" name="username" value={this.state.username} onChange={this.handleChange} />
+    </FormGroup>
+
     <FormGroup controlId="exampleForm.ControlInput1">
       <Form.Label>Email address</Form.Label>
     <FormControl type="email" placeholder="Enter email" name="email" value={this.state.email} onChange={this.handleChange} />
@@ -46,4 +55,4 @@ render() {
     )
   }
 }
-export default SignUp
+export default connect(null, { createUser }) (SignUp)
