@@ -2,7 +2,8 @@
 export const signup = (user) => {
 
   return dispatch => {
-    return fetch(`/api/users/new`, {
+    dispatch({type: 'SENDING_USER'});
+    return fetch(`/api/users`, {
       method: "POST",
       headers: {
         "Accept": "application/json",
@@ -12,11 +13,7 @@ export const signup = (user) => {
     })
     .then(response => response.json())
     .then(user =>
-      dispatch({type: 'CREATE_USER',
-        username: user.username,
-        email: user.email,
-        password: user.password}))
-
+      dispatch({type: 'CREATE_USER', user: user}))
   };
 }
 
