@@ -1,5 +1,5 @@
 
-export const signup = (user) => {
+export const createUser = (user) => {
 
   return dispatch => {
     dispatch({type: 'SENDING_USER'});
