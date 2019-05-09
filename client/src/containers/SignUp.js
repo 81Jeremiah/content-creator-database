@@ -29,7 +29,7 @@ render() {
 
   <Form onSubmit={this.handleSubmit}>
     <FormGroup controlId="exampleForm.ControlInput1">
-      <Form.Label>Email address</Form.Label>
+      <Form.Label>Username: </Form.Label>
     <FormControl type="text" placeholder="Enter Username" name="username" value={this.state.username} onChange={this.handleChange} />
     </FormGroup>
 
