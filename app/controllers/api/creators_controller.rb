@@ -2,7 +2,7 @@ class Api::CreatorsController < ApplicationController
 
   def index
     @creators = Creator.all
-    render json: @creators
+    render json: @creators.with_attached_image
   end
 
   def show
@@ -18,6 +18,6 @@ class Api::CreatorsController < ApplicationController
   private
 
   def creator_params
-    params.require(:creator).permit(:creator_name, :image, :platform, :bio, videos:[], categories: [], collabsWith: [])
+    params.require(:creator).permit(:creator_name, :platform, :bio, :image, videos:[], categories: [], collabsWith: [])
   end
 end
