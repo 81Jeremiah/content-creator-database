@@ -6,7 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-creators = Creator.create([ {creator_name: 'Shane Dawson'},
+creators = Creator.create([
+  {creator_name: 'Shane Dawson'},
   {creator_name: 'Gabe'},
   {creator_name: 'Christine Barger'},
   {creator_name: 'Pewty Pie'},
