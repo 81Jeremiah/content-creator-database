@@ -2,8 +2,10 @@ import React from 'react';
 
 
 const CreatorDetails = props => {
-  const { creator_name } = props.creator
-
+  const creator_name = props.creator_name
+  const image = props.image || {}
+  const imageUrl = image.url
+  
   return (
     <div className="">
     <h2 className="">
@@ -12,6 +14,7 @@ const CreatorDetails = props => {
 
       <p>
 
+        <img src={imageUrl} alt="creator" />
       </p>
 
     </div>

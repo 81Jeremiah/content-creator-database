@@ -9534,3 +9534,32 @@ Processing by ActiveStorage::DiskController#show as JPEG
 Completed 200 OK in 13ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/api/creators/9" for 127.0.0.1 at 2019-05-12 10:15:04 -0700
+Processing by Api::CreatorsController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mCreator Load (7.2ms)[0m  [1m[34mSELECT  "creators".* FROM "creators" WHERE "creators"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/creators_controller.rb:9
+  [1m[36mActiveStorage::Attachment Load (3.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "Creator"], ["name", "image"], ["record_id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:9
+  [1m[36mActiveStorage::Blob Load (3.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/creators_controller.rb:9
+[active_model_serializers] Rendered CreatorSerializer with ActiveModelSerializers::Adapter::Attributes (59.25ms)
+Completed 200 OK in 963ms (Views: 103.9ms | ActiveRecord: 69.2ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--901235d16670d4c2d6e3eaf660a20d8c860e827b/Color-Changing-putty.jpg" for ::1 at 2019-05-12 10:15:07 -0700
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--901235d16670d4c2d6e3eaf660a20d8c860e827b", "filename"=>"Color-Changing-putty"}
+  [1m[36mActiveStorage::Blob Load (3.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/jeremiahlutes/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (16.6ms) [0m[34mGenerated URL for file at key: 8xFYdrFjmC8dKZBiZXijY7bk (http://localhost:3001/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTJUMTc6MjA6MDcuNTE3WiIsInB1ciI6ImJsb2Jfa2V5In19--4385b1303ce49c5644046d9eac06ac7a208787ff/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg)[0m
+Redirected to http://localhost:3001/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTJUMTc6MjA6MDcuNTE3WiIsInB1ciI6ImJsb2Jfa2V5In19--4385b1303ce49c5644046d9eac06ac7a208787ff/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg
+Completed 302 Found in 84ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTJUMTc6MjA6MDcuNTE3WiIsInB1ciI6ImJsb2Jfa2V5In19--4385b1303ce49c5644046d9eac06ac7a208787ff/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg" for ::1 at 2019-05-12 10:15:07 -0700
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"Color-Changing-putty.jpg\"; filename*=UTF-8''Color-Changing-putty.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTJUMTc6MjA6MDcuNTE3WiIsInB1ciI6ImJsb2Jfa2V5In19--4385b1303ce49c5644046d9eac06ac7a208787ff", "filename"=>"Color-Changing-putty"}
+Completed 200 OK in 44ms (ActiveRecord: 0.0ms)
+
+
