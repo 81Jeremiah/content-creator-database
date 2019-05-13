@@ -28,6 +28,7 @@ export const fetchCreators = () => {
       dispatch({ type: 'SENDING_CREATOR' });
       return fetch(`/api/creators`, {
         method: "POST",
+        // removed headers to get active storage attachments to work
         // headers: {
         //   'Content-Type': 'application/json'
         // },
@@ -36,5 +37,22 @@ export const fetchCreators = () => {
     })
         .then(response => response.json())
         .then(creator => dispatch({ type: 'CREATE_CREATOR', creator: creator }));
+    };
+  }
+
+  export const updateTrending = (creatorId, trending) => {
+    const body = JSON.stringify( {creator:{trending:trending}} )
+    return (dispatch) =>{
+      dispatch({ type: 'SENDING_TRENDING' });
+      return fetch(`/api/creators/`+ creatorId , {
+        method: "PATCH",
+        headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+        },
+        body: body
+      })
+      .then(response => response.json())
+      .then(creator => dispatch({ type: 'UPDATE_TRENDING', creator: creator }));
     };
   }
