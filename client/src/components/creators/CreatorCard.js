@@ -2,19 +2,18 @@ import React, { Component } from 'react';
 import FrontCard from './FrontCard.js';
 import BackCard from './BackCard.js';
 import { Link } from 'react-router-dom';
-import { Route } from 'react-router-dom';
-import  CreatorPage  from './CreatorPage'
-
-
-export default class CreatorCard extends Component {
+import { connect } from 'react-redux'
+import { updateTrending } from '../../actions/creatorActions'
+class CreatorCard extends Component {
 
   constructor(props) {
          super(props)
 
           this.state = {
-            trending: this.props.trending
+            trending: this.props.trending,
+            id: this.props.id
           }
-          debugger
+
   }
 
 
@@ -22,12 +21,16 @@ export default class CreatorCard extends Component {
     this.setState({
       trending: this.state.trending + 1
     })
-    // this.updateTrending(props)
+
+     const creatorId = this.state.id
+     console.log(creatorId)
+     const trending = this.state.trending
+     console.log(trending)
+
+     this.props.updateTrending(creatorId, trending)
   }
 
-  handleCreatorClick = () =>{
-    alert("you've clicked me")
-  }
+
 
   render() {
 
@@ -51,3 +54,4 @@ export default class CreatorCard extends Component {
     )
   }
 }
+export default connect (null,{ updateTrending })(CreatorCard)
