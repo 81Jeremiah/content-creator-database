@@ -17,7 +17,7 @@ export default (state =
       return {...state, loading: true}
 
     case 'FETCH_CREATOR':
-      debugger
+
       return {...state, loading: false, creators:[...state.creators], creator: action.creator }
 
     case 'SENDING_CREATOR':
@@ -25,6 +25,14 @@ export default (state =
 
     case 'CREATE_CREATOR':
       return {...state, loading: false, creators: [...state.creators, action.creator]}
+
+    case 'SENDING_TRENDING':
+        return {...state, loading: true}
+
+    case 'UPDATE_TRENDING':
+      const creators = state.creators.filter(creator => creator.id !== action.creator.id)
+
+      return {...state, loading: false, creators: creators.concat(action.creator)}
 
     default:
       return state;
