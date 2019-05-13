@@ -7,7 +7,7 @@ class Api::CreatorsController < ApplicationController
 
   def show
     @creator = Creator.with_attached_image.find_by(id: params[:id])
-    
+
     render json: @creator
   end
 
@@ -17,9 +17,16 @@ class Api::CreatorsController < ApplicationController
     render json: @creator
   end
 
+  def update
+    @creator = Creator.find_by(id: params[:id])
+    @creator.update(params.require(:creator).permit(:trending))
+
+    render json: @creator
+
+  end
   private
 
   def creator_params
-    params.require(:creator).permit(:creator_name, :image)
+    params.require(:creator).permit(:creator_name, :image, :trending)
   end
 end
