@@ -6,13 +6,18 @@ export default class Creators extends Component {
 
   buildCreatorCards = () => {
     const creatorsArray = this.props.creatorObjects.creators
+    console.log(creatorsArray)
     const creators = creatorsArray.map(creator =>
     <CreatorCard
+
       key={creator.id}
+      id={creator.id}
       name={creator.creator_name}
       trending={creator.trending}
       mostPopularVideo={'some stupid shit'}
-      category={'vlogger'} />
+      category={'vlogger'}
+      image={creator.image} />
+
     );
 
      return creators

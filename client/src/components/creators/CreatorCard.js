@@ -32,8 +32,11 @@ class CreatorCard extends Component {
 
 
 
-  render() {
 
+  render() {
+    const image = this.props.image
+    console.log(image)
+    const imageURL = image.url || {}
     return (
       <div >
 
@@ -43,8 +46,8 @@ class CreatorCard extends Component {
 
         <div className="creator-card" >
 
-          <FrontCard name={this.props.name} trending={this.state.trending}/>
-          <BackCard mostPopularVideo={this.props.mostPopularVideo} category={this.props.category}/>
+          <FrontCard name={this.props.name} trending={this.state.trending} image={imageURL} />
+        <BackCard mostPopularVideo={this.props.mostPopularVideo} category={this.props.category} />
         </div>
 
         </Link>
