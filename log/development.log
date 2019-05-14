@@ -14739,3 +14739,1849 @@ Processing by Api::CreatorsController#index as */*
 Completed 200 OK in 710ms (Views: 680.2ms | ActiveRecord: 22.0ms)
 
 
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 08:39:19 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (8.5ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (4.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (8.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (6.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (2.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (736.74ms)
+Completed 200 OK in 813ms (Views: 763.5ms | ActiveRecord: 42.3ms)
+
+
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:39:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:39:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:39:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:39:22 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:39:22 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:39:22 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:39:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:39:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:39:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:39:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 08:40:31 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (9.6ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (8.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (11.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (7.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (9.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (58.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (7.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (4.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (3.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1959.81ms)
+Completed 200 OK in 2505ms (Views: 2346.2ms | ActiveRecord: 127.3ms)
+
+
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:40:34 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:40:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:40:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:40:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:40:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:40:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:40:37 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:40:37 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:40:37 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 08:40:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:09:16 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (9.9ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (16.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (10.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (2.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1192.35ms)
+Completed 200 OK in 1509ms (Views: 1443.2ms | ActiveRecord: 55.2ms)
+
+
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:09:30 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (2.2ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (4.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (5.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (11.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (2.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (831.5ms)
+Completed 200 OK in 893ms (Views: 849.8ms | ActiveRecord: 37.0ms)
+
+
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:10:25 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (10.0ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (11.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (17.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (27.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (20.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (16.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (4.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (3.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2788.5ms)
+Completed 200 OK in 3178ms (Views: 3037.0ms | ActiveRecord: 121.8ms)
+
+
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:13:28 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (4.2ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (16.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (9.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (1.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (873.49ms)
+Completed 200 OK in 979ms (Views: 925.6ms | ActiveRecord: 45.2ms)
+
+
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:13:29 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:13:29 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:14:07 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (15.3ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (11.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (4.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1243.99ms)
+Completed 200 OK in 1438ms (Views: 1375.3ms | ActiveRecord: 51.5ms)
+
+
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:14:08 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:14:09 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:14:27 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (78.9ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (4.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (6.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (7.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1076.31ms)
+Completed 200 OK in 1442ms (Views: 1317.6ms | ActiveRecord: 113.2ms)
+
+
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:14:29 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:14:29 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:14:38 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (4.1ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (5.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (950.96ms)
+Completed 200 OK in 1084ms (Views: 1046.1ms | ActiveRecord: 29.9ms)
+
+
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:16:31 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (5.4ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (48.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (5.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (4.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1332.56ms)
+Completed 200 OK in 1734ms (Views: 1646.4ms | ActiveRecord: 78.3ms)
+
+
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:16:33 -0700
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--901235d16670d4c2d6e3eaf660a20d8c860e827b/Color-Changing-putty.jpg" for ::1 at 2019-05-13 21:16:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Processing by ActiveStorage::BlobsController#show as JPEG
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:16:34 -0700
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--901235d16670d4c2d6e3eaf660a20d8c860e827b", "filename"=>"Color-Changing-putty"}
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mActiveStorage::Blob Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/jeremiahlutes/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:16:34 -0700
+[36m  Disk Storage (17.8ms) [0m[34mGenerated URL for file at key: 8xFYdrFjmC8dKZBiZXijY7bk (http://localhost:3001/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDQ6MjE6MzQuODY0WiIsInB1ciI6ImJsb2Jfa2V5In19--b9717d10b9089e39d8194e929ebdcfac9dabbda0/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg)[0m
+  
+Redirected to http://localhost:3001/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDQ6MjE6MzQuODY0WiIsInB1ciI6ImJsb2Jfa2V5In19--b9717d10b9089e39d8194e929ebdcfac9dabbda0/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+Completed 302 Found in 453ms (ActiveRecord: 2.2ms)
+
+
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:16:35 -0700
+  
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDQ6MjE6MzQuODY0WiIsInB1ciI6ImJsb2Jfa2V5In19--b9717d10b9089e39d8194e929ebdcfac9dabbda0/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg" for ::1 at 2019-05-13 21:16:35 -0700
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Processing by ActiveStorage::DiskController#show as JPEG
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:16:35 -0700
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"Color-Changing-putty.jpg\"; filename*=UTF-8''Color-Changing-putty.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDQ6MjE6MzQuODY0WiIsInB1ciI6ImJsb2Jfa2V5In19--b9717d10b9089e39d8194e929ebdcfac9dabbda0", "filename"=>"Color-Changing-putty"}
+  
+Completed 200 OK in 23ms (ActiveRecord: 0.0ms)
+
+
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:16:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:16:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:16:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:16:37 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:17:25 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (5.6ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (4.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (720.3ms)
+Completed 200 OK in 927ms (Views: 894.4ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:19:13 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (19.1ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (6.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 4], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 5], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (5.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (867.71ms)
+Completed 200 OK in 1241ms (Views: 1188.8ms | ActiveRecord: 45.0ms)
+
+
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:20:11 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (6.6ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Attachment Load (2.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" IN (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["record_type", "Creator"], ["name", "image"], ["record_id", 1], ["record_id", 2], ["record_id", 3], ["record_id", 4], ["record_id", 5], ["record_id", 6], ["record_id", 7], ["record_id", 8], ["record_id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Blob Load (2.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (100.66ms)
+Completed 200 OK in 1150ms (Views: 1039.0ms | ActiveRecord: 51.0ms)
+
+
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:21:16 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (19.9ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Attachment Load (5.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" IN (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["record_type", "Creator"], ["name", "image"], ["record_id", 1], ["record_id", 2], ["record_id", 3], ["record_id", 4], ["record_id", 5], ["record_id", 6], ["record_id", 7], ["record_id", 8], ["record_id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Blob Load (3.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (90.56ms)
+Completed 200 OK in 752ms (Views: 708.9ms | ActiveRecord: 28.9ms)
+
+
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:21:17 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:21:18 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:21:30 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (5.1ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Attachment Load (4.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" IN (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["record_type", "Creator"], ["name", "image"], ["record_id", 1], ["record_id", 2], ["record_id", 3], ["record_id", 4], ["record_id", 5], ["record_id", 6], ["record_id", 7], ["record_id", 8], ["record_id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Blob Load (11.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (156.27ms)
+Completed 200 OK in 778ms (Views: 745.3ms | ActiveRecord: 20.9ms)
+
+
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:21:30 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:21:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:21:47 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (4.2ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Attachment Load (11.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" IN (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["record_type", "Creator"], ["name", "image"], ["record_id", 1], ["record_id", 2], ["record_id", 3], ["record_id", 4], ["record_id", 5], ["record_id", 6], ["record_id", 7], ["record_id", 8], ["record_id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Blob Load (7.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (89.08ms)
+Completed 200 OK in 732ms (Views: 687.0ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:22:02 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (18.1ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Attachment Load (18.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" IN (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["record_type", "Creator"], ["name", "image"], ["record_id", 1], ["record_id", 2], ["record_id", 3], ["record_id", 4], ["record_id", 5], ["record_id", 6], ["record_id", 7], ["record_id", 8], ["record_id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Blob Load (3.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (121.73ms)
+Completed 200 OK in 930ms (Views: 874.5ms | ActiveRecord: 39.2ms)
+
+
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:22:57 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (5.9ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Attachment Load (27.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" IN (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["record_type", "Creator"], ["name", "image"], ["record_id", 1], ["record_id", 2], ["record_id", 3], ["record_id", 4], ["record_id", 5], ["record_id", 6], ["record_id", 7], ["record_id", 8], ["record_id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Blob Load (6.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (80.87ms)
+Completed 200 OK in 636ms (Views: 588.9ms | ActiveRecord: 40.3ms)
+
+
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:22:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:22:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:22:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:22:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:23:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:23:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:23:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:23:01 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%3Canonymous%3E" for 127.0.0.1 at 2019-05-13 21:23:01 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/%3Canonymous%3E"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mCreator Load (2.6ms)[0m  [1m[34mSELECT  "creators".* FROM "creators" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCreator Destroy (7.2ms)[0m  [1m[31mDELETE FROM "creators" WHERE "creators"."id" = ?[0m  [["id", 1]]
+  [1m[36mCreator Destroy (3.2ms)[0m  [1m[31mDELETE FROM "creators" WHERE "creators"."id" = ?[0m  [["id", 2]]
+  [1m[36mCreator Destroy (2.9ms)[0m  [1m[31mDELETE FROM "creators" WHERE "creators"."id" = ?[0m  [["id", 3]]
+  [1m[36mCreator Destroy (1.9ms)[0m  [1m[31mDELETE FROM "creators" WHERE "creators"."id" = ?[0m  [["id", 4]]
+  [1m[36mCreator Destroy (3.1ms)[0m  [1m[31mDELETE FROM "creators" WHERE "creators"."id" = ?[0m  [["id", 5]]
+  [1m[36mCreator Destroy (2.6ms)[0m  [1m[31mDELETE FROM "creators" WHERE "creators"."id" = ?[0m  [["id", 6]]
+  [1m[36mCreator Destroy (12.1ms)[0m  [1m[31mDELETE FROM "creators" WHERE "creators"."id" = ?[0m  [["id", 7]]
+  [1m[36mCreator Destroy (2.9ms)[0m  [1m[31mDELETE FROM "creators" WHERE "creators"."id" = ?[0m  [["id", 8]]
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:25:01 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (1.7ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Attachment Load (29.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "Creator"], ["name", "image"], ["record_id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Blob Load (4.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (82.54ms)
+Completed 200 OK in 381ms (Views: 339.2ms | ActiveRecord: 35.5ms)
+
+
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:26:28 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (3.4ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Attachment Load (3.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "Creator"], ["name", "image"], ["record_id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Blob Load (3.9ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (61.63ms)
+Completed 200 OK in 497ms (Views: 472.8ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--901235d16670d4c2d6e3eaf660a20d8c860e827b/Color-Changing-putty.jpg" for ::1 at 2019-05-13 21:26:29 -0700
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--901235d16670d4c2d6e3eaf660a20d8c860e827b", "filename"=>"Color-Changing-putty"}
+  [1m[36mActiveStorage::Blob Load (5.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/jeremiahlutes/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (20.7ms) [0m[34mGenerated URL for file at key: 8xFYdrFjmC8dKZBiZXijY7bk (http://localhost:3001/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDQ6MzE6MjkuNjY2WiIsInB1ciI6ImJsb2Jfa2V5In19--334c568ed035940436ac23b3aa5386bd0e0c0b30/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg)[0m
+Redirected to http://localhost:3001/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDQ6MzE6MjkuNjY2WiIsInB1ciI6ImJsb2Jfa2V5In19--334c568ed035940436ac23b3aa5386bd0e0c0b30/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg
+Completed 302 Found in 89ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDQ6MzE6MjkuNjY2WiIsInB1ciI6ImJsb2Jfa2V5In19--334c568ed035940436ac23b3aa5386bd0e0c0b30/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg" for ::1 at 2019-05-13 21:26:29 -0700
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"Color-Changing-putty.jpg\"; filename*=UTF-8''Color-Changing-putty.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDQ6MzE6MjkuNjY2WiIsInB1ciI6ImJsb2Jfa2V5In19--334c568ed035940436ac23b3aa5386bd0e0c0b30", "filename"=>"Color-Changing-putty"}
+Completed 200 OK in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:43:03 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (9.9ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Attachment Load (4.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "Creator"], ["name", "image"], ["record_id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Blob Load (7.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (51.69ms)
+Completed 200 OK in 393ms (Views: 358.8ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--901235d16670d4c2d6e3eaf660a20d8c860e827b/Color-Changing-putty.jpg" for ::1 at 2019-05-13 21:43:03 -0700
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--901235d16670d4c2d6e3eaf660a20d8c860e827b", "filename"=>"Color-Changing-putty"}
+  [1m[36mActiveStorage::Blob Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/jeremiahlutes/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (14.7ms) [0m[34mGenerated URL for file at key: 8xFYdrFjmC8dKZBiZXijY7bk (http://localhost:3001/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDQ6NDg6MDMuNjM5WiIsInB1ciI6ImJsb2Jfa2V5In19--9838f49a3a13c560330ce526e91ad45ec2514050/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg)[0m
+Redirected to http://localhost:3001/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDQ6NDg6MDMuNjM5WiIsInB1ciI6ImJsb2Jfa2V5In19--9838f49a3a13c560330ce526e91ad45ec2514050/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg
+Completed 302 Found in 66ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDQ6NDg6MDMuNjM5WiIsInB1ciI6ImJsb2Jfa2V5In19--9838f49a3a13c560330ce526e91ad45ec2514050/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg" for ::1 at 2019-05-13 21:43:03 -0700
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"Color-Changing-putty.jpg\"; filename*=UTF-8''Color-Changing-putty.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDQ6NDg6MDMuNjM5WiIsInB1ciI6ImJsb2Jfa2V5In19--9838f49a3a13c560330ce526e91ad45ec2514050", "filename"=>"Color-Changing-putty"}
+Completed 200 OK in 20ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:43:30 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (9.5ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Attachment Load (6.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "Creator"], ["name", "image"], ["record_id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Blob Load (7.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (30.68ms)
+Completed 200 OK in 338ms (Views: 291.3ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDQ6NDg6MDMuNjM5WiIsInB1ciI6ImJsb2Jfa2V5In19--9838f49a3a13c560330ce526e91ad45ec2514050/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg" for ::1 at 2019-05-13 21:43:31 -0700
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"Color-Changing-putty.jpg\"; filename*=UTF-8''Color-Changing-putty.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDQ6NDg6MDMuNjM5WiIsInB1ciI6ImJsb2Jfa2V5In19--9838f49a3a13c560330ce526e91ad45ec2514050", "filename"=>"Color-Changing-putty"}
+Completed 304 Not Modified in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 21:55:59 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (9.2ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Attachment Load (26.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "Creator"], ["name", "image"], ["record_id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Blob Load (5.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (84.38ms)
+Completed 200 OK in 507ms (Views: 454.0ms | ActiveRecord: 41.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--901235d16670d4c2d6e3eaf660a20d8c860e827b/Color-Changing-putty.jpg" for ::1 at 2019-05-13 21:55:59 -0700
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--901235d16670d4c2d6e3eaf660a20d8c860e827b", "filename"=>"Color-Changing-putty"}
+  [1m[36mActiveStorage::Blob Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/jeremiahlutes/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (13.3ms) [0m[34mGenerated URL for file at key: 8xFYdrFjmC8dKZBiZXijY7bk (http://localhost:3001/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDU6MDA6NTkuNzc1WiIsInB1ciI6ImJsb2Jfa2V5In19--7fee9ab755ba81de88877c82f858ba64870ce82b/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg)[0m
+Redirected to http://localhost:3001/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDU6MDA6NTkuNzc1WiIsInB1ciI6ImJsb2Jfa2V5In19--7fee9ab755ba81de88877c82f858ba64870ce82b/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg
+Completed 302 Found in 67ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDU6MDA6NTkuNzc1WiIsInB1ciI6ImJsb2Jfa2V5In19--7fee9ab755ba81de88877c82f858ba64870ce82b/Color-Changing-putty.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22Color-Changing-putty.jpg%22%3B+filename%2A%3DUTF-8%27%27Color-Changing-putty.jpg" for ::1 at 2019-05-13 21:55:59 -0700
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"Color-Changing-putty.jpg\"; filename*=UTF-8''Color-Changing-putty.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRPSGhHV1dSeVJtcHRRemhrUzFwQ2FWcFlhV3BaTjJKckJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSmJhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlRMjlzYjNJdFEyaGhibWRwYm1jdGNIVjBkSGt1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZERiMnh2Y2kxRGFHRnVaMmx1Wnkxd2RYUjBlUzVxY0djR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMTktMDUtMTRUMDU6MDA6NTkuNzc1WiIsInB1ciI6ImJsb2Jfa2V5In19--7fee9ab755ba81de88877c82f858ba64870ce82b", "filename"=>"Color-Changing-putty"}
+Completed 200 OK in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/creators/9" for 127.0.0.1 at 2019-05-13 22:06:05 -0700
+Processing by Api::CreatorsController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mCreator Load (5.9ms)[0m  [1m[34mSELECT  "creators".* FROM "creators" WHERE "creators"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/creators_controller.rb:9
+  [1m[36mActiveStorage::Attachment Load (2.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "Creator"], ["name", "image"], ["record_id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:9
+  [1m[36mActiveStorage::Blob Load (4.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/creators_controller.rb:9
+[active_model_serializers] Rendered CreatorSerializer with ActiveModelSerializers::Adapter::Attributes (27.89ms)
+Completed 200 OK in 271ms (Views: 42.6ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/api/creators" for 127.0.0.1 at 2019-05-13 22:06:09 -0700
+Processing by Api::CreatorsController#index as */*
+  [1m[36mCreator Load (2.0ms)[0m  [1m[34mSELECT "creators".* FROM "creators"[0m
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? AND "active_storage_attachments"."record_id" = ?[0m  [["record_type", "Creator"], ["name", "image"], ["record_id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:5
+  [1m[36mActiveStorage::Blob Load (2.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/creators_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.85ms)
+Completed 200 OK in 173ms (Views: 158.9ms | ActiveRecord: 5.7ms)
+
+
+Started PATCH "/api/creators/9" for 127.0.0.1 at 2019-05-13 22:07:36 -0700
+Processing by Api::CreatorsController#update as JSON
+  Parameters: {"creator"=>{"trending"=>20}, "id"=>"9"}
+  [1m[36mCreator Load (2.0ms)[0m  [1m[34mSELECT  "creators".* FROM "creators" WHERE "creators"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/creators_controller.rb:21
+  [1m[35m (1.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/creators_controller.rb:22
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/creators_controller.rb:22
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (3.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (5.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers] Rendered CreatorSerializer with ActiveModelSerializers::Adapter::Attributes (173.66ms)
+Started PATCH "/api/creators/9" for 127.0.0.1 at 2019-05-13 22:07:36 -0700
+Completed 200 OK in 372ms (Views: 199.4ms | ActiveRecord: 14.0ms)
+
+
+Processing by Api::CreatorsController#update as JSON
+  Parameters: {"creator"=>{"trending"=>21}, "id"=>"9"}
+  [1m[36mCreator Load (6.0ms)[0m  [1m[34mSELECT  "creators".* FROM "creators" WHERE "creators"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/creators_controller.rb:21
+  [1m[35m (0.9ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/creators_controller.rb:22
+  [1m[36mCreator Update (2.1ms)[0m  [1m[33mUPDATE "creators" SET "trending" = ?, "updated_at" = ? WHERE "creators"."id" = ?[0m  [["trending", 21], ["updated_at", "2019-05-14 05:07:36.734819"], ["id", 9]]
+  ↳ app/controllers/api/creators_controller.rb:22
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/creators_controller.rb:22
+Started PATCH "/api/creators/9" for 127.0.0.1 at 2019-05-13 22:07:36 -0700
+Processing by Api::CreatorsController#update as JSON
+  Parameters: {"creator"=>{"trending"=>22}, "id"=>"9"}
+  [1m[36mCreator Load (3.0ms)[0m  [1m[34mSELECT  "creators".* FROM "creators" WHERE "creators"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (4.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/controllers/api/creators_controller.rb:21
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+Started PATCH "/api/creators/9" for 127.0.0.1 at 2019-05-13 22:07:37 -0700
+  [1m[35m (8.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by Api::CreatorsController#update as JSON
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (8.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/creators_controller.rb:22
+  Parameters: {"creator"=>{"trending"=>23}, "id"=>"9"}
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+  [1m[36mCreator Update (6.5ms)[0m  [1m[33mUPDATE "creators" SET "trending" = ?, "updated_at" = ? WHERE "creators"."id" = ?[0m  [["trending", 22], ["updated_at", "2019-05-14 05:07:37.569337"], ["id", 9]]
+  [1m[36mCreator Load (9.0ms)[0m  [1m[34mSELECT  "creators".* FROM "creators" WHERE "creators"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+[active_model_serializers] Rendered CreatorSerializer with ActiveModelSerializers::Adapter::Attributes (784.15ms)
+  ↳ app/controllers/api/creators_controller.rb:22
+  ↳ app/controllers/api/creators_controller.rb:21
+Completed 200 OK in 1065ms (Views: 930.9ms | ActiveRecord: 24.4ms)
+
+
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/creators_controller.rb:22
+  ↳ app/controllers/api/creators_controller.rb:22
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (2.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mCreator Update (6.5ms)[0m  [1m[33mUPDATE "creators" SET "trending" = ?, "updated_at" = ? WHERE "creators"."id" = ?[0m  [["trending", 23], ["updated_at", "2019-05-14 05:07:38.234518"], ["id", 9]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+  ↳ app/controllers/api/creators_controller.rb:22
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (3.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+  ↳ app/controllers/api/creators_controller.rb:22
+[active_model_serializers] Rendered CreatorSerializer with ActiveModelSerializers::Adapter::Attributes (1073.87ms)
+[active_model_serializers]   [1m[36mActiveStorage::Attachment Load (4.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Creator"], ["name", "image"], ["LIMIT", 1]]
+Completed 200 OK in 2129ms (Views: 1157.9ms | ActiveRecord: 27.4ms)
+
+
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers]   [1m[36mActiveStorage::Blob Load (11.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/creator_serializer.rb:7
+[active_model_serializers] Rendered CreatorSerializer with ActiveModelSerializers::Adapter::Attributes (189.96ms)
+Completed 200 OK in 1797ms (Views: 202.1ms | ActiveRecord: 38.1ms)
+
+

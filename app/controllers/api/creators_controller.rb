@@ -2,7 +2,7 @@ class Api::CreatorsController < ApplicationController
 
   def index
     @creators = Creator.all
-    render json: @creators
+    render json: @creators.with_attached_image
   end
 
   def show
