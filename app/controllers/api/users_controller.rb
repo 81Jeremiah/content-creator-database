@@ -8,10 +8,12 @@ class Api::UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(user_params)
-    # auth_token = AuthenticateUser.new(@user.email, @user.password).call
-    # response = { message: Message.account_created, auth_token: auth_token }
-    render json:@user
+      user = User.new({username: params[:username], password: params[:password], email: params[:email]})
+      if user.save
+        render json: { user: user }
+      else
+        render json: {error: user.errors.full_messages}
+      end
   end
 
   def show

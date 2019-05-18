@@ -19,7 +19,10 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', '>= 1.1.0', require: false
-
+# gem for json web tokens
+gem 'jwt'
+#using with jwt for authentication
+gem 'knock'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
