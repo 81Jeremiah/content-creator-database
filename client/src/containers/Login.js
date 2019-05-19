@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import { Button,Form,ControlLabel, FormControl, FormGroup } from 'react-bootstrap';
-
+import { authenticate } from '../actions/userActions';
 class Login extends Component {
 
   state = {
@@ -19,7 +19,14 @@ class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault()
+    if (this.props.authenticate(this.state)) {
+      this.props.history.push('/')
+      window.alert("You're Logged In!")
+    } else {
+      window.alert("Sorry, something went wrong. Please try logging in again.")
+    }
   }
+
 render() {
   return(
 
@@ -46,4 +53,4 @@ render() {
     )
   }
 }
-export default Login
+export default connect(null, { authenticate })(Login);

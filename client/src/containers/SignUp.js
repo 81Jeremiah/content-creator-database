@@ -21,8 +21,12 @@ class SignUp extends Component {
   handleSubmit = event => {
     event.preventDefault()
     const user = this.state
-    this.props.createUser(user)
-
+    if (this.props.createUser(user)) {
+    this.props.history.push('/')
+      window.alert("Thank you for signing up.")
+    } else {
+      window.alert("We're having issues creating your account.")
+    }
   }
 render() {
   return(
