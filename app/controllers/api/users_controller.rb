@@ -8,6 +8,12 @@ class Api::UsersController < ApplicationController
   end
 
   def create
+    # @user = User.new(user_params)
+    # if @user.valid? && @user.save
+    #   render json: @user
+    # else
+    #   render json: @user.errors, status: 400
+    # end
       user = User.new({username: params[:username], password: params[:password], email: params[:email]})
       if user.save
         render json: { user: user }
@@ -21,9 +27,12 @@ class Api::UsersController < ApplicationController
   end
 
   def find
-    @user = User.find_by(email: params[:email])
+    @user = User.find_by(email: params[:user][:email])
+
     if @user
+      
       render json: @user
+
     else
       @errors = @user.errors.full_messages
       render json: @errors
@@ -38,6 +47,7 @@ class Api::UsersController < ApplicationController
 
   def user_params
       params.require(:user).permit(:username, :email, :password, :password_confirmation)
+      # params.permit :auth, :user_token
   end
 
 end
