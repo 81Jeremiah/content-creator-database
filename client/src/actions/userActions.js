@@ -1,6 +1,6 @@
-import fetch from 'isomorphic-fetch';
+// import fetch from 'isomorphic-fetch';
 
-import * as types from './actions.Types';
+import * as types from './actionsTypes';
 
 const authRequest = () => {
   return {
@@ -36,12 +36,82 @@ export const createUser = (user) => {
       body: JSON.stringify( user )
     })
     .then(response => response.json())
-    .then(user =>
-      dispatch({type: 'CREATE_USER', user: user}))
+    .then(jresp => {
+        dispatch(authenticate({
+          username: user.username,
+          email: user.email,
+          password: user.password})
+        );
+      })
+    // .then(user =>
+    //
+    //   dispatch(authenticate({
+    //      username: user.username,
+    //      email: user.email,
+    //      password: user.password})
+    //   )
+    // )
+    // .catch((errors) => {
+    //     dispatch(authFailure(errors))
+    //   })
   };
 }
 
 
-export function logoutUser(){
-    localStorage.removeItem('jwtToken')
+export const authenticate = (credentials) => {
+  return dispatch => {
+    dispatch(authRequest())
+
+    return fetch(`/api/user_token`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({auth: credentials})
+    })
+      .then(res => res.json())
+      .then((response) => {
+          const token = response.jwt;
+          localStorage.setItem('token', token);
+
+          return getUser(credentials)
+      })
+      .then((user) => {
+        debugger
+        console.log(user)
+          dispatch(authSuccess(user, localStorage.token))
+      })
+      .catch((errors) => {
+          dispatch(authFailure(errors))
+          localStorage.clear()
+      })
+  }
+}
+
+export const getUser = (credentials) => {
+  const request = new Request(`/api/find_user`, {
+    method: "POST",
+    headers: new Headers({
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${localStorage.token}`,
+    }),
+    body: JSON.stringify(credentials)
+  })
+  return fetch(request)
+    .then(response => response.json())
+    .then(userJson => {return userJson})
+
+    .catch(error => {
+      return error;
+    });
+
+}
+
+export const logout = () => {
+  return dispatch => {
+    localStorage.clear();
+    return dispatch({
+      type: types.LOGOUT
+    });
+  }
 }
