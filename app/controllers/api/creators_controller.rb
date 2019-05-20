@@ -1,7 +1,12 @@
 class Api::CreatorsController < ApplicationController
 
   def index
-    @creators = Creator.all
+    @creators = Creator.order_by_trending
+    render json: @creators.with_attached_image
+  end
+
+  def search
+    @creators = Creator.search(params[:creator_name])
     render json: @creators.with_attached_image
   end
 
@@ -24,6 +29,8 @@ class Api::CreatorsController < ApplicationController
     render json: @creator
 
   end
+
+
   private
 
   def creator_params
