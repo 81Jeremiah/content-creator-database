@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { logout } from '../actions/userActions';
 import { Navbar, Nav, NavItem, Button, FormControl, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import CreatorSearch from '../containers/creators/CreatorSearch'
 
 class NavigationBar extends Component {
 
@@ -30,10 +31,7 @@ render() {
 
 
             </Nav>
-            <Form inline>
-              <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-              <Button variant="outline-success">Search</Button>
-            </Form>
+             <CreatorSearch />
         </Navbar.Collapse>
     </Navbar>
     </div>
@@ -53,10 +51,7 @@ render() {
                 <Nav.Link><Link to="/new">New</Link></Nav.Link>
               <Button onClick={this.handleLogout}> Logout </Button>
             </Nav>
-            <Form inline>
-              <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-              <Button variant="outline-success">Search</Button>
-            </Form>
+              <CreatorSearch />
         </Navbar.Collapse>
     </Navbar>
     </div>
