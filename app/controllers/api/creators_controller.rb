@@ -34,6 +34,6 @@ class Api::CreatorsController < ApplicationController
   private
 
   def creator_params
-    params.require(:creator).permit(:creator_name, :image, :trending)
+    params.require(:creator).permit(:creator_name, :image, :trending, :platform, :category, :bio)
   end
 end

@@ -28,10 +28,10 @@ import { withRouter, Redirect } from 'react-router-dom'
       redirect: true})
   }
 
-  componentWillUnmount() {
-    this.setState({
-      redirect: false})    ;
-    }
+  // componentWillUnmount() {
+  //   this.setState({
+  //     redirect: false})    ;
+  //   }
 
   render() {
     if (this.state.redirect === true){

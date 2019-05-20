@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_11_215214) do
+ActiveRecord::Schema.define(version: 2019_05_20_013815) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -53,6 +53,9 @@ ActiveRecord::Schema.define(version: 2019_05_11_215214) do
     t.integer "trending", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "platform"
+    t.string "category"
+    t.text "bio"
   end
 
   create_table "users", force: :cascade do |t|

@@ -14,12 +14,13 @@ export default class Creators extends Component {
       id={creator.id}
       name={creator.creator_name}
       trending={creator.trending}
-      mostPopularVideo={'some stupid shit'}
-      category={'vlogger'}
+      platform={creator.platform}
+      category={creator.category}
+      bio={creator.bio}
       image={creator.image} />
 
     );
-
+     debugger
      return creators
    }
 
