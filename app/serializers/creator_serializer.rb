@@ -1,7 +1,7 @@
 class CreatorSerializer < ActiveModel::Serializer
   include Rails.application.routes.url_helpers
 
-  attributes :id,:creator_name, :trending, :image
+  attributes :id,:creator_name, :trending, :image, :platform, :category, :bio
 
   def image
     return unless object.image.attached?
