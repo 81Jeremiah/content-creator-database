@@ -53,6 +53,7 @@ export const fetchCreators = () => {
         body: body
       })
       .then(response => response.json())
-      .then(creator => dispatch({ type: 'UPDATE_TRENDING', creator: creator }));
+      .then(() => dispatch(fetchCreators()));
     };
   }
+// { type: 'UPDATE_TRENDING', creator: creator }
