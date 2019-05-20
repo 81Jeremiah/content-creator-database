@@ -20,14 +20,13 @@ class CreatorCard extends Component {
   handleClick = () =>{
     this.setState({
       trending: this.state.trending + 1
-    })
-
-     const creatorId = this.state.id
-     console.log(creatorId)
-     const trending = this.state.trending
-     console.log(trending)
-
-     this.props.updateTrending(creatorId, trending)
+    }, () => {
+    //setting this in callback function to send sate properly
+    const creatorId = this.state.id
+    const trending = this.state.trending
+    this.props.updateTrending(creatorId, trending)
+      }
+    )
   }
 
 
@@ -35,7 +34,6 @@ class CreatorCard extends Component {
 
   render() {
     const image = this.props.image
-    console.log(image)
     const imageURL = image.url || {}
     return (
       <div >
@@ -47,7 +45,7 @@ class CreatorCard extends Component {
         <div className="creator-card" >
 
           <FrontCard name={this.props.name} trending={this.state.trending} image={imageURL} />
-        <BackCard mostPopularVideo={this.props.mostPopularVideo} category={this.props.category} />
+          <BackCard bio={this.props.bio} category={this.props.category} platform={this.props.platform} />
         </div>
 
         </Link>
