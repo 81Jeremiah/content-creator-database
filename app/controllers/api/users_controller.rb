@@ -30,7 +30,7 @@ class Api::UsersController < ApplicationController
     @user = User.find_by(email: params[:user][:email])
 
     if @user
-      
+
       render json: @user
 
     else
@@ -47,7 +47,7 @@ class Api::UsersController < ApplicationController
 
   def user_params
       params.require(:user).permit(:username, :email, :password, :password_confirmation)
-      # params.permit :auth, :user_token
+      params.permit :auth, :user_token
   end
 
 end
