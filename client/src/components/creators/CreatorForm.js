@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Button,Form, FormGroup, ControlLabel, FormControl} from 'react-bootstrap'
 import Dropzone from 'react-dropzone'
-import ImageUploader from "./ImageUploader"
+import { withRouter, Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 // import { withRouter, Redirect } from 'react-router-dom'
 import { createCreator } from '../../actions/creatorActions'
@@ -15,13 +15,10 @@ class CreatorForm extends Component {
     this.state = {
       creator_name: "",
       image: null,
-      preview: null,
       platform: "",
       bio: "",
-      videos: [],
-      category: [],
-      collabsWith: []
-
+      category: "",
+      redirect: false
     }
 
   }
@@ -47,22 +44,23 @@ class CreatorForm extends Component {
      const creator= new FormData();
      creator.append('[creator]creator_name', this.state.creator_name)
      creator.append('[creator]image', this.state.image)
-     
+     creator.append('[creator]platform', this.state.platform)
+     creator.append('[creator]bio', this.state.bio)
+     creator.append('[creator]category', this.state.category)
 
      this.props.createCreator(creator)
+     
      this.setState({
-       creator_name: "",
-       image: null,
-       preview: null,
-       platform: "",
-       bio: "",
-       videos: [],
-       categories: [],
-       collabsWith: []
+       redirect: true
      })
    }
 
    render() {
+     if (this.state.redirect === true){
+       this.setState({
+         redirect: false})
+       return <Redirect to="/" />
+     }
      return(
     <Form onSubmit={this.handleSubmit}>
       <Form.Group controlId="exampleForm.ControlInput1">
@@ -83,20 +81,14 @@ class CreatorForm extends Component {
         </div>
 
       <Form.Label>Platform:</Form.Label>
-    <Form.Control type="text" name="platform" value={this.state.platform} onChange={this.handleChange}/>
+      <Form.Control type="text" name="platform" value={this.state.platform} onChange={this.handleChange}/>
+
+      <Form.Label>Category:</Form.Label>
+      <Form.Control type="text" name="category" value={this.state.category} onChange={this.handleChange}/>
 
       </Form.Group>
 
-      <Form.Group controlId="exampleForm.ControlSelect2">
-        <Form.Label>Categories:</Form.Label>
-        <Form.Control as="select" multiple name="categories" value={this.state.categories} onChange={this.handleChange}>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </Form.Control>
-      </Form.Group>
+
       <Form.Group controlId="exampleForm.ControlTextarea1">
         <Form.Label>Bio:</Form.Label>
         <Form.Control as="textarea" rows="3" name="bio" value={this.state.bio} onChange={this.handleChange}/>
