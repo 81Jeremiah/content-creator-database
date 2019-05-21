@@ -13,6 +13,7 @@ body, html, #root {
  #root {
    align-items: center;
    justify-content: center;
+   background-image: url('./assets/retina_dust.png'); 
 }
 
 #creator-grid {
@@ -57,8 +58,21 @@ body, html, #root {
   justify-content: space-around;
   align-items: center;
   z-index: 999;
-  color: white
+  color: white;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 
+}
+
+.creator-name{
+  position: absolute;
+	bottom: 0px;
+}
+
+.trending{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
 }
 .background-image {
   /* padding: 10px; */
@@ -83,10 +97,38 @@ body, html, #root {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
+  color: black;
 }
 
+.thumbnail {
+  width: 50px;
+  height: 50px;
+}
 
+.profile-pic {
+  width: 200px;
+  height: 200px;
+}
+
+.trend-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff !important;
+  text-transform: uppercase;
+  background: #60a3bc;
+  padding: 5px;
+  border-radius: 50px;
+
+  border: none;
+}
+
+.trend-button:hover {
+btext-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
 
 span {
   border: none;
