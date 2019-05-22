@@ -5,7 +5,7 @@ import { withRouter, Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 // import { withRouter, Redirect } from 'react-router-dom'
 import { createCreator } from '../../actions/creatorActions'
-
+import PreviewImage from './PreviewImage'
 
 
 class CreatorForm extends Component {
@@ -49,7 +49,7 @@ class CreatorForm extends Component {
      creator.append('[creator]category', this.state.category)
 
      this.props.createCreator(creator)
-     
+
      this.setState({
        redirect: true
      })
@@ -62,22 +62,27 @@ class CreatorForm extends Component {
        return <Redirect to="/" />
      }
      return(
-    <Form onSubmit={this.handleSubmit}>
+    <Form className="creator-form" onSubmit={this.handleSubmit}>
+      <h2>Enter A New Creator Below</h2>
       <Form.Group controlId="exampleForm.ControlInput1">
         <Form.Label>Creator Name:</Form.Label>
       <Form.Control type="text" name="creator_name" value={this.state.creator_name} onChange={this.handleChange}/>
 
       <Form.Label>Image:</Form.Label>
+
         <div className="text-center mt-5">
+
           <Dropzone onDrop={this.onDrop} accept="image/png, image/gif,image/jpg,image/jpeg" >
 
             {({getRootProps, getInputProps}) => (
               <div {...getRootProps()}>
                 <input {...getInputProps()} />
-                Click me to upload a file!
+              {this.state.image !== null ? "File Uploaded" :
+              "Click me to upload a file!" }
               </div>
             )}
           </Dropzone>
+
         </div>
 
       <Form.Label>Platform:</Form.Label>

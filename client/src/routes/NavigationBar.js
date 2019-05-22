@@ -12,7 +12,6 @@ class NavigationBar extends Component {
     this.props.logout()
   }
 
-  debugger
 
 render() {
   const guestView = (
@@ -22,9 +21,18 @@ render() {
             {/* <Navbar.Brand> */}
 
             {/* </Navbar.Brand> */}
+
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav variant="tabs" className="mr-auto">
+                <div class="CCDB-logo">
+                      <span>C</span>
+                      <span>C</span>
+                      <span>D</span>
+                      <span>B</span>
+
+                    <br/>Content Creator Database
+                  </div>
                 <Nav.Link><Link to="/login">Login</Link></Nav.Link>
                 <Nav.Link><Link to="/signup">SignUp</Link></Nav.Link>
                 <Nav.Link><Link to="/">Home</Link></Nav.Link>
