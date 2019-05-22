@@ -29,7 +29,6 @@ render() {
                 <Nav.Link><Link to="/signup">SignUp</Link></Nav.Link>
                 <Nav.Link><Link to="/">Home</Link></Nav.Link>
 
-
             </Nav>
              <CreatorSearch />
         </Navbar.Collapse>
