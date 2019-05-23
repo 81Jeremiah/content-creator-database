@@ -30,7 +30,8 @@ class Login extends Component {
 render() {
   return(
 
-  <Form onSubmit={this.handleSubmit}>
+  <Form className="login-form" onSubmit={this.handleSubmit}>
+    <h1>LOGIN</h1>
     <FormGroup controlId="exampleForm.ControlInput1">
       <Form.Label>Email address</Form.Label>
     <FormControl type="email" placeholder="Enter email" name="email" value={this.state.email} onChange={this.handleChange} />

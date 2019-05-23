@@ -31,7 +31,8 @@ class SignUp extends Component {
 render() {
   return(
 
-  <Form onSubmit={this.handleSubmit}>
+  <Form className="signup-form" onSubmit={this.handleSubmit}>
+    <h1> CREATE A NEW ACCOUNT </h1>
     <FormGroup controlId="exampleForm.ControlInput1">
       <Form.Label>Username: </Form.Label>
     <FormControl type="text" placeholder="Enter Username" name="username" value={this.state.username} onChange={this.handleChange} />
