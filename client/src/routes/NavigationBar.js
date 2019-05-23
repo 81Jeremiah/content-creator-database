@@ -18,24 +18,25 @@ render() {
     <div>
     <Navbar  bg="light" expand="lg" >
 
-            {/* <Navbar.Brand> */}
+            <Navbar.Brand>
+          <Link to="/"   className="CCDB-logo">
+                  <span>C</span>
+                  <span>C</span>
+                  <span>D</span>
+                  <span>B</span>
 
-            {/* </Navbar.Brand> */}
+                <br/>Content Creator Database
+
+          </Link>
+            </Navbar.Brand>
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav variant="tabs" className="mr-auto">
-                <div class="CCDB-logo">
-                      <span>C</span>
-                      <span>C</span>
-                      <span>D</span>
-                      <span>B</span>
 
-                    <br/>Content Creator Database
-                  </div>
-                <Nav.Link><Link to="/login">Login</Link></Nav.Link>
-                <Nav.Link><Link to="/signup">SignUp</Link></Nav.Link>
-                <Nav.Link><Link to="/">Home</Link></Nav.Link>
+                <Link to="/login" className="btn btn-md btn-outline-secondary">Login</Link>
+              <Link to="/signup" className="btn btn-md btn-outline-secondary" roll="button">SignUp</Link>
+            <Link to="/" className="btn btn-md btn-outline-secondary" roll="button">Home</Link>
 
             </Nav>
              <CreatorSearch />
@@ -48,15 +49,23 @@ render() {
     <div>
     <Navbar  bg="light" expand="lg" >
 
+      <Navbar.Brand>
+        <Link to="/"   className="CCDB-logo">
+                <span>C</span>
+                <span>C</span>
+                <span>D</span>
+                <span>B</span>
+              <br/>Content Creator Database
+        </Link>
+      </Navbar.Brand>
+
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav variant="tabs" className="mr-auto">
-
-
-                <Nav.Link><Link to="/">Home</Link></Nav.Link>
-                <Nav.Link><Link to="/new">New</Link></Nav.Link>
-              <Button onClick={this.handleLogout}> Logout </Button>
+                <Link to="/" className="btn btn-md btn-outline-secondary">Home</Link>
+                <Link to="/new" className="btn btn-md btn-outline-secondary">New</Link>
+                <Button className="btn btn-md btn-outline-secondary " variant="outline-dark" onClick={this.handleLogout}> Logout </Button>
             </Nav>
               <CreatorSearch />
         </Navbar.Collapse>
