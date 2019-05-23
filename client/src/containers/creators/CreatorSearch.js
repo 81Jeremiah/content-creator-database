@@ -21,7 +21,9 @@ import { withRouter, Redirect } from 'react-router-dom'
     })
   }
 
-  handleClick = () =>{
+  handleSubmit = event =>{
+    event.preventDefault()
+
     this.props.search(this.state.query)
     this.setState({
       query: "",
@@ -41,11 +43,12 @@ import { withRouter, Redirect } from 'react-router-dom'
       return <Redirect to="/searchresults" />
     }
     return(
-      <Form inline>
+      <Form inline onSubmit={this.handleSubmit}>
         <FormControl type="text" placeholder="Search"
         className="mr-sm-2" value={this.state.query}  onChange={this.handleChange}/>
-        <Button onClick={this.handleClick} variant="outline-success">Search</Button>
+        <Button type="submit"  variant="outline-success">Search</Button>
       </Form>
+
 
 
     )
