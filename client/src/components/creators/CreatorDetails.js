@@ -1,24 +1,32 @@
 import React from 'react';
+import TrendButton from './TrendButton'
+
+
+
 
 
 const CreatorDetails = props => {
-  const creator_name = props.creator_name
+  const {creator_name, bio, platform, category, trending, id } = props.creator
+
+  //sets the default image prop to empty objext
   const image = props.image || {}
   const imageUrl = image.url
-  
+
   return (
     <div className="">
-    <h2 className="">
-      { creator_name }
-    </h2>
+      <img className="profile-pic" src={imageUrl} alt="creator" />
+      <h2 className="">
+        { creator_name }
+      </h2>
 
-      <p>
-
-        <img src={imageUrl} alt="creator" />
-      </p>
+      <h4> { platform } </h4>
+      <h4> { category } </h4>
+      <h4>Trend Meter: {trending} </h4>
+      <p> { bio } </p>
 
     </div>
   )
 }
+
 
 export default CreatorDetails

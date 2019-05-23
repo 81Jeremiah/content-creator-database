@@ -51,7 +51,6 @@ class CreatorCard extends Component {
 
         </Link>
          <TrendButton trending ={this.props.trending} id={this.props.id} />
-        {/* <button className="trend-button" onClick={this.handleClick}>trend</button> */}
       </div>
 
     )
