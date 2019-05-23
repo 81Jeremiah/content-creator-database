@@ -8,14 +8,22 @@ class TrendButton extends Component {
          super(props)
 
           this.state = {
-            trending: this.props.trending,
-            id: this.props.id
+            trending: this.props.trending || "",
+            id: this.props.id || ""
           }
-
+    console.log(this)
   }
 
+  componentDidUpdate()  {
+    if (this.state.trending !== this.props.trending  )
+    this.setState({
+      trending: this.props.trending,
+      id: this.props.id
+    })
+  }
+
+
   handleClick = () =>{
-    debugger
     this.setState({
       trending: this.state.trending + 1
     }, () => {
