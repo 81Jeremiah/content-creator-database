@@ -7,9 +7,9 @@ export default class CardFront extends Component {
 
       <div className="card-front">
       <h1 className="creator-name"> {this.props.name} </h1>
-      <img className="background-image" src={this.props.image} alt="background"/>
+      <img className="background-image" src={this.props.image} alt="background" />
 
-      <h3 className="trending"> {this.props.trending}</h3>
+    <h3 className="trending"> Trend Meter:{this.props.trending}</h3>
 
       </div>
     )

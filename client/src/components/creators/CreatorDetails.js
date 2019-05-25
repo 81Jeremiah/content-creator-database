@@ -1,12 +1,8 @@
 import React from 'react';
-import TrendButton from './TrendButton'
-
-
-
 
 
 const CreatorDetails = props => {
-  const {creator_name, bio, platform, category, trending, id } = props.creator
+  const {creator_name, bio, platform, category, trending } = props.creator
 
   //sets the default image prop to empty objext
   const image = props.image || {}

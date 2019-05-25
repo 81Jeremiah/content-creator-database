@@ -8,12 +8,6 @@ class Api::UsersController < ApplicationController
   end
 
   def create
-    # @user = User.new(user_params)
-    # if @user.valid? && @user.save
-    #   render json: @user
-    # else
-    #   render json: @user.errors, status: 400
-    # end
       user = User.new({username: params[:username], password: params[:password], email: params[:email]})
       if user.save
         render json: { user: user }

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import SearchResults from '../../components/creators/SearchResults'
 import { Button, FormControl, Form } from 'react-bootstrap';
 import { search } from '../../actions/searchActions';
 import { connect } from 'react-redux'
-import { withRouter, Redirect } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 
  class CreatorSearch extends Component {
 
@@ -30,11 +29,6 @@ import { withRouter, Redirect } from 'react-router-dom'
       redirect: true})
   }
 
-  // componentWillUnmount() {
-  //   this.setState({
-  //     redirect: false})    ;
-  //   }
-
   render() {
     if (this.state.redirect === true){
       this.setState({
@@ -48,7 +42,6 @@ import { withRouter, Redirect } from 'react-router-dom'
         className="mr-sm-2" value={this.state.query}  onChange={this.handleChange}/>
         <Button type="submit"  variant="outline-success">Search</Button>
       </Form>
-
 
 
     )

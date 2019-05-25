@@ -13,6 +13,7 @@ class TopCreators extends Component {
   render() {
     return (
       <div>
+        <h1 class="page-header"> TOP CREATORS </h1>
         <Creators creatorObjects={this.props.creators} />
       </div>
     )

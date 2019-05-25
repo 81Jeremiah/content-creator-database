@@ -20,7 +20,7 @@ export default class Creators extends Component {
       image={creator.image} />
 
     );
-     debugger
+
      return creators
    }
 
