@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { NavLink } from 'react-router-dom'
 import { logout } from '../actions/userActions';
-import { Navbar, Nav, NavItem, Button, FormControl, Form } from 'react-bootstrap';
+import { Navbar, Nav, Button, } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import CreatorSearch from '../containers/creators/CreatorSearch'
 
@@ -11,6 +10,7 @@ class NavigationBar extends Component {
   handleLogout = () => {
     this.props.logout()
   }
+
 
 
 render() {
@@ -35,9 +35,9 @@ render() {
               <Nav variant="tabs" className="mr-auto">
 
                 <Link to="/login" className="btn btn-md btn-outline-secondary">Login</Link>
-              <Link to="/signup" className="btn btn-md btn-outline-secondary" roll="button">SignUp</Link>
-            <Link to="/" className="btn btn-md btn-outline-secondary" roll="button">Home</Link>
-
+                <Link to="/signup" className="btn btn-md btn-outline-secondary" roll="button">SignUp</Link>
+                <Link to="/" className="btn btn-md btn-outline-secondary" roll="button">Home</Link>
+                <Link to="/about" className="btn btn-md btn-outline-secondary" roll="button">About</Link>
             </Nav>
              <CreatorSearch />
         </Navbar.Collapse>
@@ -59,12 +59,12 @@ render() {
         </Link>
       </Navbar.Brand>
 
-
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav variant="tabs" className="mr-auto">
                 <Link to="/" className="btn btn-md btn-outline-secondary">Home</Link>
                 <Link to="/new" className="btn btn-md btn-outline-secondary">New</Link>
+                <Link to="/about" className="btn btn-md btn-outline-secondary" roll="button">About</Link>
                 <Button className="btn btn-md btn-outline-secondary " variant="outline-dark" onClick={this.handleLogout}> Logout </Button>
             </Nav>
               <CreatorSearch />
@@ -74,8 +74,8 @@ render() {
   )
 
   return(
-    <nav > {this.props.isAuthenticated ? userView : guestView}
-
+    <nav >
+      {this.props.isAuthenticated ? userView : guestView}
     </nav>
   )
  }
