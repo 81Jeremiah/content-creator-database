@@ -11,7 +11,7 @@ class NavigationBar extends Component {
     this.props.logout()
   }
 
-
+const 
 
 render() {
   const guestView = (

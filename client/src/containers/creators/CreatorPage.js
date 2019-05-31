@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import CreatorDetails from './CreatorDetails';
+import CreatorDetails from '../../components/creators/CreatorDetails';
 import { fetchCreator } from '../../actions/creatorActions';
-import TrendButton from './TrendButton'
+import TrendButton from '../../components/creators/TrendButton'
 
 class CreatorPage extends Component {
 

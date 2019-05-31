@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchCreators } from '../../actions/creatorActions';
-import Creators from '../../containers/creators/Creators';
+import Creators from '../../components/creators/Creators';
 
-class TopCreators extends Component {
+class CreatorsContainer extends Component {
 
   componentDidMount(){
     this.props.fetchCreators()
@@ -26,9 +26,5 @@ const mapStateToProps = state => {
    }
  }
 
-// const mapDispatchToProps = dispatch => {
-//   return {
-//     fetchCreators: () => dispatch(fetchCreators())
-//     }
-//   }
-export default connect(mapStateToProps, { fetchCreators })(TopCreators);
+
+export default connect(mapStateToProps, { fetchCreators })(CreatorsContainer);
