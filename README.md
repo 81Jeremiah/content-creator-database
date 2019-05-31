@@ -9,7 +9,7 @@ An online database used to creator a record of all the internet influencers and 
 ## Installation
 
 ### Setup
-1. Clone [this repository](https://github.com/81Jeremiah/trivia-town) to your local development environment.
+1. Clone [this repository](https://github.com/81Jeremiah/content-creator-database) to your local development environment.
 2. `cd` into the content-cretor-database folder and run `bundle install`.
 3. Set up your database by running `rake db:migrate` from the terminal
 4. `cd` into the client folder and run npm intall
