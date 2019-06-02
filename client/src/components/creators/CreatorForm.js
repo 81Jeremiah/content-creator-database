@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import {Button,Form, FormGroup, ControlLabel, FormControl} from 'react-bootstrap'
+import {Button,Form } from 'react-bootstrap'
 import Dropzone from 'react-dropzone'
-import { withRouter, Redirect } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
-// import { withRouter, Redirect } from 'react-router-dom'
 import { createCreator } from '../../actions/creatorActions'
-import PreviewImage from './PreviewImage'
+
 
 
 class CreatorForm extends Component {

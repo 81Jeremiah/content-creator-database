@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-export default class CardFront extends Component {
+const CardFront = props => {
 
-  render() {
-    return (
+  return (
 
-      <div className="card-front">
-      <h1 className="creator-name"> {this.props.name} </h1>
-      <img className="background-image" src={this.props.image} alt="background" />
+    <div className="card-front">
+      <h1 className="creator-name"> {props.name} </h1>
+      <img className="background-image" src={props.image} alt="background" />
+      <h3 className="trending"> Trend Meter:{props.trending}</h3>
 
-    <h3 className="trending"> Trend Meter:{this.props.trending}</h3>
+    </div>
+  )
 
-      </div>
-    )
-  }
+
 }
+export default CardFront

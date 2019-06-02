@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react'
 import CreatorCard from '../../components/creators/CreatorCard.js'
 
+const Creators = props => {
+    const creatorsArray = props.creatorObjects.creators
 
-export default class Creators extends Component {
-
-  buildCreatorCards = () => {
-    const creatorsArray = this.props.creatorObjects.creators
-    console.log(creatorsArray)
     const creators = creatorsArray.map(creator =>
     <CreatorCard
 
@@ -20,15 +17,12 @@ export default class Creators extends Component {
       image={creator.image} />
 
     );
-
-     return creators
-   }
-
-  render() {
     return (
       <div id="creator-grid">
-       {this.buildCreatorCards()}
+       { creators }
       </div>
     )
   }
-}
+
+
+export default Creators
