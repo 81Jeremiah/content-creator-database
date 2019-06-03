@@ -22,7 +22,7 @@ const authFailure = (errors) => {
     errors: errors
   }
 }
-
+//builds new user in the data base
 export const createUser = (user) => {
 
   return dispatch => {
@@ -37,32 +37,25 @@ export const createUser = (user) => {
     })
     .then(response => response.json())
     .then(jresp => {
+      //after user is created it sends in auth request to start session
         dispatch(authenticate({
           username: user.username,
           email: user.email,
           password: user.password})
         );
       })
-    // .then(user =>
-    //
-    //   dispatch(authenticate({
-    //      username: user.username,
-    //      email: user.email,
-    //      password: user.password})
-    //   )
-    // )
-    // .catch((errors) => {
-    //     dispatch(authFailure(errors))
-    //   })
+    .catch((errors) => {
+        dispatch(authFailure(errors))
+      })
   };
 }
 
-
+//sends user if found gives jwt token
 export const authenticate = (credentials) => {
   return dispatch => {
     dispatch(authRequest())
 
-    return fetch(`/api/user_token`, {
+    return fetch('/api/user_token', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -77,17 +70,18 @@ export const authenticate = (credentials) => {
           return getUser(credentials)
       })
       .then((user) => {
-        debugger
-        console.log(user)
+
           dispatch(authSuccess(user, localStorage.token))
       })
       .catch((errors) => {
           dispatch(authFailure(errors))
           localStorage.clear()
+
+
       })
   }
 }
-
+//calls find user to in controller
 export const getUser = (credentials) => {
   const request = new Request(`/api/find_user`, {
     method: "POST",
@@ -102,16 +96,38 @@ export const getUser = (credentials) => {
     .then(userJson => {return userJson})
 
     .catch(error => {
-      return error;
+      return false;
     });
 
 }
-
+//clears token from local storage
 export const logout = () => {
   return dispatch => {
     localStorage.clear();
     return dispatch({
       type: types.LOGOUT
     });
+  }
+}
+
+//checks for token so routes available if logged in
+export const checkToken = (token) => {
+  return dispatch => {
+    dispatch(authRequest())
+    return fetch(`/api/check_token`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${token}`
+      },
+    })
+    .then(response => response.json())
+    .then((user) => {
+        dispatch(authSuccess(user, localStorage.auth_token))
+    })
+    .catch((errors) => {
+      dispatch(authFailure(errors))
+      localStorage.clear()
+    })
   }
 }
