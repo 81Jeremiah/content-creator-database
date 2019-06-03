@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const CreatorList = props  => {
 
-
+//list the creators that meet searh criteria
   const listCreators = props.creators.map( creator => {
     return(
 

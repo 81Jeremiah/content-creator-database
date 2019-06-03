@@ -6,7 +6,7 @@ import Routes from './routes/Routes';
 
 
 class App extends Component {
-
+  //checks for token so session stays if page is refreshed
   componentWillMount = () => {
     if (localStorage.getItem("token")) {
     console.log(localStorage.getItem("auth_token"))
@@ -25,7 +25,7 @@ class App extends Component {
     );
   }
 }
-
+//passing the user and auth props down
 const mapStateToProps = state => {
   return {
     isAuthenticated: state.auth.isAuthenticated,

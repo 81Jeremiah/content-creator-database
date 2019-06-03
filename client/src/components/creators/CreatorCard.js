@@ -10,7 +10,7 @@ const CreatorCard = props =>{
     const imageURL = image.url || {}
     return (
       <div >
-
+        {/* this link to creator show page */}
       <Link to={{
           pathname: `/creators/${props.id}`}}>
 

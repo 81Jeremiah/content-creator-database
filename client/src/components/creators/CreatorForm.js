@@ -39,7 +39,7 @@ class CreatorForm extends Component {
 
    handleSubmit = event => {
      event.preventDefault()
-
+     // appending form data needed for active record
      const creator= new FormData();
      creator.append('[creator]creator_name', this.state.creator_name)
      creator.append('[creator]image', this.state.image)
@@ -55,6 +55,7 @@ class CreatorForm extends Component {
    }
 
    render() {
+     //checks for redirect and sends home if form is submitted
      if (this.state.redirect === true){
        this.setState({
          redirect: false})
@@ -70,7 +71,7 @@ class CreatorForm extends Component {
       <Form.Label>Image:</Form.Label>
 
         <div className="text-center mt-5">
-
+          {/* dropzone is handling the image input */}
           <Dropzone onDrop={this.onDrop} accept="image/png, image/gif,image/jpg,image/jpeg" >
 
             {({getRootProps, getInputProps}) => (

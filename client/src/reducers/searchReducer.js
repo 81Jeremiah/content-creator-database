@@ -11,7 +11,6 @@ export default (state =
 
 
     case 'SEARCH_RESULTS':
-      console.log(action.creators)
       return {loading: false, foundCreators: action.creators }
 
     default:

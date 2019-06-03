@@ -4,6 +4,8 @@ import { search } from '../../actions/searchActions';
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 
+
+
  class CreatorSearch extends Component {
 
   constructor(props) {
@@ -28,7 +30,7 @@ import { Redirect } from 'react-router-dom'
       query: "",
       redirect: true})
   }
-
+//redirects to search page once submit button clicked
   render() {
     if (this.state.redirect === true){
       this.setState({

@@ -10,40 +10,32 @@ import SearchResults from '../components/creators/SearchResults'
 import About from '../components/static/About'
 
 const Routes = props => {
-
-
-  const guest = (
-
-  <div className='container'>
-    <NavigationBar isAuthenticated={props.isAuthenticated}/>
-    <Switch>
-       <Route exact path="/login" component={Login}/>
-       <Route exact path="/Signup" component={SignUp}/>
-       <Route exact path="/" component={CreatorsContainer}/>
-       <Route exact path="/creators/:id" component={CreatorPage} />
-       <Route exact path="/searchresults" component={SearchResults} />
-       <Route exact path="/about" component={About} />
-    </Switch>
+//only allows new route if logged in
+let customRoutes = ""
+  if (props.isAuthenticated){
+    customRoutes =
+   <Route exact path="/new" component={CreatorForm}/>
+} else {
+  customRoutes =
+  <div>
+   <Route exact path="/login" component={Login}/>
+   <Route exact path="/Signup" component={SignUp}/>
   </div>
-)
-  const loggedIn = (
-  <div className='container'>
-       <NavigationBar isAuthenticated={props.isAuthenticated}/>
-       <Switch>
-          <Route exact path="/new" component={CreatorForm}/>
-          <Route exact path="/" component={CreatorsContainer}/>
-          <Route exact path="/creators/:id" component={CreatorPage} />
-          <Route exact path="/searchresults" component={SearchResults} />
-          <Route exact path="/about" component={About} />
-       </Switch>
-    </div>)
-
-
+}
       return (
         <Router>
-            {props.isAuthenticated ? loggedIn : guest}
-        </Router>
-  )
-}
+          <div className='container'>
 
+              <NavigationBar isAuthenticated={props.isAuthenticated}/>
+              <Switch>
+                 <Route exact path="/" component={CreatorsContainer}/>
+                 <Route exact path="/creators/:id" component={CreatorPage} />
+                 <Route exact path="/searchresults" component={SearchResults} />
+                 <Route exact path="/about" component={About} />
+                 {customRoutes}
+              </Switch>
+          </div>
+        </Router>
+      )
+}
 export default Routes

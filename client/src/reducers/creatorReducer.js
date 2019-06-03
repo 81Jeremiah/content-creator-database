@@ -30,6 +30,7 @@ export default (state =
         return {...state, loading: true}
 
     case 'UPDATE_TRENDING':
+    //only updates the creator whose trend was updated
       const creators = state.creators.filter(creator => creator.id !== action.creator.id)
 
       return {...state, loading: false, creators: creators.concat(action.creator)}

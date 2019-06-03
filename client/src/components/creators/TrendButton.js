@@ -11,9 +11,9 @@ class TrendButton extends Component {
             trending: this.props.trending || "",
             id: this.props.id || ""
           }
-    console.log(this)
-  }
 
+  }
+//checks for updates in state and renders is trend was updated in store
   componentDidUpdate()  {
     if (this.state.trending !== this.props.trending  )
     this.setState({

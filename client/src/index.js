@@ -8,7 +8,7 @@ import thunk from 'redux-thunk'
 import rootReducer from './reducers/index.js'
 
 import * as serviceWorker from './serviceWorker';
-
+//adding redux store with root reucer
 const store = createStore(
   rootReducer,
   compose(
@@ -17,7 +17,7 @@ const store = createStore(
     window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() : f => f
   )
 )
-
+//provider gives access to store to all children of App
 ReactDOM.render(
   <Provider store={store}>
     <App />

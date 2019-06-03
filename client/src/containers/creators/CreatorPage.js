@@ -5,13 +5,13 @@ import { fetchCreator } from '../../actions/creatorActions';
 import TrendButton from '../../components/creators/TrendButton'
 
 class CreatorPage extends Component {
-
+//after mount finds the creator by params
   componentDidMount = () => {
     const creatorId = this.props.match.params.id
 
     this.props.fetchCreator(creatorId)
   }
-
+//needed for updates in trending
   componentDidUpdate = () => {
     const creatorId = this.props.match.params.id
 

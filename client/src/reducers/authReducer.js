@@ -1,3 +1,4 @@
+//using the actions from action types to prevent rewriting certain actions
 import * as types from "../actions/actionsTypes";
 
 const initialState = {

@@ -3,7 +3,7 @@ import React from 'react'
 const BackCard = props => {
 
     const bio = props.bio || ""
-    // console.log(bio)
+    //cuts off bio at 120 characters
     const bioSm = bio.substring(0,120)+ "..."
 
     return (
@@ -13,7 +13,7 @@ const BackCard = props => {
       <h5 className="category">Category: {props.category}</h5>
     </div>
     )
-    
+
 }
 
 export default BackCard

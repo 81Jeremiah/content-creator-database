@@ -4,7 +4,7 @@ import { fetchCreators } from '../../actions/creatorActions';
 import Creators from '../../components/creators/Creators';
 
 class CreatorsContainer extends Component {
-
+//sends request for creators
   componentDidMount(){
     this.props.fetchCreators()
 

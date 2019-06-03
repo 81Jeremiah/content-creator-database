@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Button,Form,ControlLabel, FormControl, FormGroup } from 'react-bootstrap';
+import { Button,Form, FormControl, FormGroup } from 'react-bootstrap';
 import { authenticate } from '../actions/userActions';
 class Login extends Component {
 
@@ -22,27 +22,15 @@ class Login extends Component {
     event.preventDefault()
     this.props.authenticate(this.state)
 
-    if (localStorage.token) {
-      this.props.history.push('/')
-      window.alert("You're Logged In!")
-    }
   }
 
-  //   if ( this.props.authenticate(this.state)) {
-  //
-  //     this.props.history.push('/')
-  //     window.alert("You're Logged In!")
-  //   } else {
-  //
-  //     window.alert("Sorry, something went wrong. Please try logging in again.")
-  //   }
-  // }
 
+//checks for change in redux store/state to handle login
   componentDidUpdate = (prevProps) => {
     //
     if (this.props.user !== prevProps.user ) {
       console.log(this.props.user)
-      if (this.props.user.isAuthenticating && this.props.user.errors.length !== 0){
+      if (this.props.user.isAuthenticating) {
         this.props.history.push('/')
         window.alert("You're Logged In!")
       } else if(this.props.user.errors.length !== 0) {
