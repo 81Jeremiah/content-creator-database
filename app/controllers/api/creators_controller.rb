@@ -1,4 +1,5 @@
 class Api::CreatorsController < ApplicationController
+  before_action :authenticate_user, only: [:create]
 
   def index
     @creators = Creator.order_by_trending
