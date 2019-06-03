@@ -1,3 +1,4 @@
+// sends request for top 9 creators on home page
 export const fetchCreators = () => {
   return (dispatch) => {
     dispatch({type: 'LOADING_CREATORS'});
@@ -8,6 +9,7 @@ export const fetchCreators = () => {
     })
   }
 }
+// send request to find creator on show page
  export const fetchCreator = (creatorId) => {
      console.log(creatorId)
     return (dispatch) => {
@@ -21,7 +23,7 @@ export const fetchCreators = () => {
 
     }
   }
-
+//send creator data to api
   export function createCreator(creator){
     return dispatch => {
 
@@ -40,6 +42,7 @@ export const fetchCreators = () => {
     };
   }
 
+//communicates with API update the trend count
   export const updateTrending = (creatorId, trending) => {
     const body = JSON.stringify( {creator:{trending:trending}} )
     return (dispatch) =>{
@@ -56,4 +59,3 @@ export const fetchCreators = () => {
       .then(() => dispatch(fetchCreators()));
     };
   }
-// { type: 'UPDATE_TRENDING', creator: creator }

@@ -32,6 +32,11 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  def check_token
+    @user = AuthorizeApiRequest.new(request.headers).call[:user]
+    render json: @user
+  end
+
   private
 
   def set_user

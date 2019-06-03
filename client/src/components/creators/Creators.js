@@ -5,16 +5,17 @@ const Creators = props => {
     const creatorsArray = props.creatorObjects.creators
 
     const creators = creatorsArray.map(creator =>
+    // attributes of creator card defaults are set directly because component is funtional
     <CreatorCard
 
       key={creator.id}
       id={creator.id}
-      name={creator.creator_name}
+      name={creator.creator_name || ""}
       trending={creator.trending}
-      platform={creator.platform}
-      category={creator.category}
-      bio={creator.bio}
-      image={creator.image} />
+      platform={creator.platform || ""}
+      category={creator.category || "" }
+      bio={creator.bio || ""}
+      image={creator.image}  />
 
     );
     return (

@@ -7,6 +7,7 @@ class Login extends Component {
   state = {
     email: "",
     password: "",
+    isValidated: false
   };
 
 
@@ -19,14 +20,36 @@ class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault()
-    if (this.props.authenticate(this.state)) {
+    this.props.authenticate(this.state)
+
+    if (localStorage.token) {
       this.props.history.push('/')
       window.alert("You're Logged In!")
-    } else {
-      window.alert("Sorry, something went wrong. Please try logging in again.")
     }
   }
 
+  //   if ( this.props.authenticate(this.state)) {
+  //
+  //     this.props.history.push('/')
+  //     window.alert("You're Logged In!")
+  //   } else {
+  //
+  //     window.alert("Sorry, something went wrong. Please try logging in again.")
+  //   }
+  // }
+
+  componentDidUpdate = (prevProps) => {
+    //
+    if (this.props.user !== prevProps.user ) {
+      console.log(this.props.user)
+      if (this.props.user.isAuthenticating && this.props.user.errors.length !== 0){
+        this.props.history.push('/')
+        window.alert("You're Logged In!")
+      } else if(this.props.user.errors.length !== 0) {
+        window.alert("Sorry, something went wrong. Please try logging in again.")
+      }
+   }
+}
 render() {
   return(
 
@@ -54,4 +77,12 @@ render() {
     )
   }
 }
-export default connect(null, { authenticate })(Login);
+
+const mapStateToProps = state => {
+  return {
+       user: state.auth
+   }
+}
+
+
+export default connect(mapStateToProps, { authenticate })(Login);

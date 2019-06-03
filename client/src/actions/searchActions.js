@@ -1,3 +1,4 @@
+//return search results
 export const search = (query) => {
   return (dispatch) => {
     dispatch({type: 'SEARCHING'});
