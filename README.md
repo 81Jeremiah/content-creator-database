@@ -3,7 +3,7 @@
 
 ## The Content Creator Database
 
-An online database used to creator a record of all the internet influencers and content creators. Add new creators, discovers new ones and trend your favorites!
+An online database used to create a record of all the internet influencers and content creators. Add new creators, discovers new ones and trend your favorites!
 
 
 ## Installation
